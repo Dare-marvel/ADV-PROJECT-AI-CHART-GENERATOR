@@ -1,11 +1,9 @@
-# VizAI
+# StellarData
 
 **Introduction**
 
 This project allows users to upload datasets and automatically generate visualizations through natural language queries. It uses the Google Gemini API and Streamlit for an interactive interface, enabling real-time insights and data exploration without requiring programming knowledge.
 
-**Demo**
-![](https://github.com/KaifSayyad/ADV_lab/blob/main/Project/demo/demo.gif)
 
 **Prerequisites**
 
@@ -17,13 +15,13 @@ This project allows users to upload datasets and automatically generate visualiz
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/KaifSayyad/VizAI.git
+    git clone https://github.com/KaifSayyad/StellarData.git
     ```
 
 2.  **Navigate to the project directory:**
 
     ```bash
-    cd VizAI
+    cd StellarData
     ```
 
 3.  **Create a Python virtual environment (recommended):**
