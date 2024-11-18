@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
+import os
 from utils import generate_visualizations, get_gemini_response_multiple, parse_gemini_response_multiple, get_gemini_response, parse_gemini_response
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set up Google Gemini API key
-GENAI_API_KEY = "AIzaSyDBR4vO60wJywwUM5xdtEFPlcf94D9LczM"  # Replace with your actual Gemini API key
+GENAI_API_KEY = os.getenv("GEMINI_API_KEY")  # Replace with your actual Gemini API key
 
 # Apply a sci-fi theme with custom HTML and CSS
 def sci_fi_theme():
@@ -60,7 +64,7 @@ def sci_fi_theme():
 
 # Set up the page configuration
 st.set_page_config(
-    page_title="VizAI - Data Visualization and Insights",
+    page_title="StellarData - Data Visualization and Insights",
     page_icon="✨",
     layout="wide"
 )
@@ -69,9 +73,9 @@ st.set_page_config(
 sci_fi_theme()
 
 # Title and Description
-st.title("🌌 VizAI: Your AI-Powered Data Visualization Tool")
+st.title("🌌 StellarData: Your AI-Powered Data Visualization Tool")
 st.markdown("""
-    **VizAI** is your gateway to the future of data visualization. Powered by AI, it brings to life
+    **StellarData** is your gateway to the future of data visualization. Powered by AI, it brings to life
     the hidden patterns in your datasets through stunning and insightful visualizations. Simply upload your CSV file,
     ask natural language questions, and let the magic unfold. 🚀
 """)
