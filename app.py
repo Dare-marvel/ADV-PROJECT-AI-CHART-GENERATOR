@@ -9,6 +9,13 @@ load_dotenv()
 # Set up Google Gemini API key
 GENAI_API_KEY = os.getenv("GEMINI_API_KEY")  # Replace with your actual Gemini API key
 
+# Set up the page configuration
+st.set_page_config(
+    page_title="StellarData - Data Visualization and Insights",
+    page_icon="✨",
+    layout="wide"
+)
+
 # Apply a sci-fi theme with custom HTML and CSS
 def sci_fi_theme():
     st.markdown("""
@@ -47,13 +54,6 @@ def sci_fi_theme():
             border-radius: 10px;
             box-shadow: 0 0 20px #00eaff;
         }
-        .stMarkdown {
-            background: rgba(0, 13, 26, 0.9);
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #004080;
-            box-shadow: 0 0 20px #004080;
-        }
         .css-1aumxhk {
             background-color: #002b5c !important;
             box-shadow: 0 0 30px #00eaff;
@@ -62,15 +62,10 @@ def sci_fi_theme():
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     """, unsafe_allow_html=True)
 
-# Set up the page configuration
-st.set_page_config(
-    page_title="StellarData - Data Visualization and Insights",
-    page_icon="✨",
-    layout="wide"
-)
 
 # Apply the sci-fi theme
 sci_fi_theme()
+
 
 # Title and Description
 st.title("🌌 StellarData: Your AI-Powered Data Visualization Tool")
