@@ -68,7 +68,7 @@ sci_fi_theme()
 
 
 # Title and Description
-st.title("🌌 StellarData: Your AI-Powered Data Visualization Tool")
+st.title("🌌 StellarData: AI-Powered Data Visualization Tool")
 st.markdown("""
     **StellarData** is your gateway to the future of data visualization. Powered by AI, it brings to life
     the hidden patterns in your datasets through stunning and insightful visualizations. Simply upload your CSV file,
